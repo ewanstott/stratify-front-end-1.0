@@ -6,7 +6,8 @@ import { MainComponent } from "./main/main.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, SideNavComponent, MainComponent],
+  imports: [HeaderComponent, SideNavComponent, MainComponent],
+  // RouterOutlet,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,11 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {
+  faDashboard,
+  faLocation,
+  faShop,
+  faBox,
+  faMoneyBill,
+  faChartBar,
+  faContactBook,
+  faHand,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @Component({
   selector: 'app-side-nav',
-  imports: [],
   templateUrl: './side-nav.component.html',
-  styleUrl: './side-nav.component.css'
+  styleUrls: ['./side-nav.component.css'],
+  imports: [FontAwesomeModule]
 })
-export class SideNavComponent {
+export class SideNavComponent implements OnInit {
+
+  faDashboard = faDashboard;
+  faLocation = faLocation;
+  faShop = faShop;
+  faBox = faBox;
+  faMoneyBill = faMoneyBill;
+  faChartBar = faChartBar;
+  faContactBook = faContactBook;
+  faHand = faHand;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
